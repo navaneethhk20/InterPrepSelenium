@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Navaneeth H K/IdeaProjects/InterPrepSelenium/src/test/java/org/example/tests">
+        <classes>
+        <class name="org.example.tests.AppWVO">
+            <methods>
+                <include name="testLogin"/>
+            </methods>
+        </class>
+            <class name="org.example.tests.Katalon">
+                <methods>
+            <include name="testKatalon"/>
+        </methods>
+        </class>
+    <class name="org.example.tests.BasicCommands">
+    </class>
+</classes>
+</test>
+</suite>
