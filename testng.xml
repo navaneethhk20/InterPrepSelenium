@@ -3,17 +3,17 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Navaneeth H K/IdeaProjects/InterPrepSelenium/src/test/java/org/example/tests">
         <classes>
-        <class name="org.example.tests.AppWVO">
+        <class name="org.example.tests.Ex30062025.Part1.AppWVO">
             <methods>
                 <include name="testLogin"/>
             </methods>
         </class>
-            <class name="org.example.tests.Katalon">
+            <class name="org.example.tests.Ex30062025.Part1.Katalon">
                 <methods>
             <include name="testKatalon"/>
         </methods>
         </class>
-    <class name="org.example.tests.BasicCommands">
+    <class name="org.example.tests.Ex30062025.Part1.BasicCommands">
     </class>
 </classes>
 </test>

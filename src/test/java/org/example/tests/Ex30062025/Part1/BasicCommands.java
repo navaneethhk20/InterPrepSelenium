@@ -1,4 +1,4 @@
-package org.example.tests;
+package org.example.tests.Ex30062025.Part1;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
