@@ -28,16 +28,17 @@ public class Lab02 {
         Assert.assertEquals(health.getText(), "CURA Healthcare Service","Message is not matching");
         Assert.assertEquals(wecare.getText(), "We Care About Your Health","We care Message is not matching");
 
+        makeAppointment.click();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
 
-        WebElement username = driver.findElement(By.cssSelector("#txt-username"));
-        WebElement password = driver.findElement(By.className("#txt-password"));
+        WebElement username = driver.findElement(By.id("txt-username"));
+        WebElement password = driver.findElement(By.id("txt-password"));
         WebElement login = driver.findElement(By.xpath("//button[text()=\"Login\"]"));
-        WebElement loginFail = driver.findElement(By.xpath("//p[@class=\"lead text-danger\"]"));
+
 
         try {
             Thread.sleep(3000);
@@ -54,6 +55,7 @@ public class Lab02 {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        WebElement loginFail = driver.findElement(By.xpath("//p[@class=\"lead text-danger\"]"));
 
         Assert.assertEquals(loginFail.getText(),"Login failed! Please ensure the username and password are valid.");
 
