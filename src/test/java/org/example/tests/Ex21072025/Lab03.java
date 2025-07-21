@@ -20,8 +20,9 @@ public class Lab03 {
         String second = "]/td[";
         String third = "]";
         int row= driver.findElements(By.xpath("//table[@id=\"customers\"]/tbody/tr")).size();
-        for(int i=2;i<=row;i++){
-            for(int j=1;j<=i;j++){
+        int col = driver.findElements(By.id("//table[@id='customers']/tbody/tr[2]/td")).size();
+        for(int i=1;i<=row;i++){
+            for(int j=1;j<=col;j++){
                 String path = first+i+second+j+third;
                 try {
                     Thread.sleep(3000);
@@ -37,7 +38,6 @@ public class Lab03 {
                     String text = driver.findElement(By.xpath(path1)).getText();
                     String text2 = driver.findElement(By.xpath(path2)).getText();
                     System.out.println(text+" "+text2);
-
                 }
             }
         }
