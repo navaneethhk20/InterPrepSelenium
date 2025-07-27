@@ -1,9 +1,15 @@
 package org.example.tests.Ex22072025;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
 
 public class Lab02 {
     @Test
@@ -34,5 +40,31 @@ public class Lab02 {
             throw new RuntimeException(e);
         }
         driver.findElement(By.id("submit")).click();
+
+
+//        try {
+//            TakesScreenshot screenshot = (TakesScreenshot) driver;
+//            File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
+//
+//            File destFile = new File("C:\\Users\\Navaneeth H K\\IdeaProjects\\InterPrepSelenium\\screenshots\\fullpage.png");
+//            FileUtils.copyFile(sourceFile, destFile);
+//
+//            System.out.println("Full page screenshot saved successfully!");
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+
+        try{
+            TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+            File sourcefile =takesScreenshot.getScreenshotAs(OutputType.FILE);
+            File destinfile =new File("C:\\Users\\Navaneeth H K\\IdeaProjects\\InterPrepSelenium\\screenshots\\fail.png");
+            FileUtils.copyFile(sourcefile,destinfile);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+
     }
 }
