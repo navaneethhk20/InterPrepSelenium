@@ -33,6 +33,12 @@
       <version>7.11.0</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>ru.yandex.qatools.ashot</groupId>
+      <artifactId>ashot</artifactId>
+      <version>1.5.4</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
     <dependency>
       <groupId>org.assertj</groupId>
