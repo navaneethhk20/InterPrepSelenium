@@ -32,8 +32,6 @@ public class Lab1 {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-
-
     }
 
 }
