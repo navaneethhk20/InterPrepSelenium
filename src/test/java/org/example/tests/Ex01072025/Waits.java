@@ -15,7 +15,6 @@ public class Waits {
     public void test_wait1(){
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--start-maximized");
-
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://www.makemytrip.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
