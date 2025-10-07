@@ -8,14 +8,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-
+im
 public class Amazon {
-    @Test
-     public void test (){
-         WebDriver driver = new ChromeDriver();
-         driver.get("https://www.amazon.in/");
-         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()=\"Sell\"]"))).click();
-     }
+    String[] fruits={"apple","mango"};
+            String []fruits2={"bamnan"};
 
+            Map<String , Integer> map = new Map<>();
+            for(String friit: fruits){
+                map.put(fruits,1);
+
+                for(String fr:fruits2){
+                    map.put(fruits2,1)
+                }
+
+
+
+    }
 }
