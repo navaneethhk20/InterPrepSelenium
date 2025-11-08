@@ -1,5 +1,7 @@
 package org.example.tests.Ex07112025;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+
+import java.time.Duration;
 
 public class L3 {
     @Test
@@ -58,5 +63,8 @@ public class L3 {
         driver.findElement(By.xpath("//a[normalize-space()='space']"));
         driver.findElement(By.xpath("//a[text()='test']"));
         driver.findElement(By.xpath("//a[contains(text(),'Make')]"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }
 }
