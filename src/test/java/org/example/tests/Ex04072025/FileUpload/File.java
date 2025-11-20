@@ -16,5 +16,6 @@ public class File {
         upload.sendKeys("C:\\Users\\Navaneeth H K\\IdeaProjects\\InterPrepSelenium\\src\\test\\java\\org\\example\\tests\\Ex04072025\\FileUpload\\Navaneeth H_K- QA.pdf");
 
         driver.findElement(By.name("submit")).click();
+
     }
 }
