@@ -4,6 +4,9 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
+
+import java.time.Duration;
+
 public class L2 {
     @Test
     public static void  test(){
@@ -19,6 +22,9 @@ public class L2 {
     public static void  test2(){
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("");
+
+        driver.get("https://www.google.com");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.quit();
     }
 }
